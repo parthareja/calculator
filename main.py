@@ -1,3 +1,5 @@
+import addition, division, multiplication, subtraction
+
 
 def __main__():
     while True:
@@ -11,13 +13,13 @@ def __main__():
             a, b = [int(i) for i in input("Enter two numbers separated by spaces: ").split(" ")]
 
             if inp == 1:
-                print(add(a, b))
+                print(addition.add(a, b))
             elif inp == 2:
-                print(subtract(a, b))
+                print(subtraction.subtract(a, b))
             elif inp == 3:
-                print(multiply(a, b))
+                print(multiplication.multiply(a, b))
             elif inp == 4:
-                print(divide(a, b))
+                print(division.divide(a, b))
         
         
 __main__()
